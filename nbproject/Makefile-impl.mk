@@ -24,7 +24,7 @@ CLEAN_SUBPROJECTS=${CLEAN_SUBPROJECTS_${SUBPROJECTS}}
 
 
 # Project Name
-PROJECTNAME=Projet_serre_ilot_3
+PROJECTNAME=Projet_serre_ilot_1
 
 # Active Configuration
 DEFAULTCONF=Debug

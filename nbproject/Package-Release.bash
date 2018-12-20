@@ -13,8 +13,8 @@ CND_BUILDDIR=build
 CND_DLIB_EXT=so
 NBTMPDIR=${CND_BUILDDIR}/${CND_CONF}/${CND_PLATFORM}/tmp-packaging
 TMPDIRNAME=tmp-packaging
-OUTPUT_PATH=${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/Projet_serre_ilot__3
-OUTPUT_BASENAME=Projet_serre_ilot__3
+OUTPUT_PATH=${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/Projet_serre_ilot_3
+OUTPUT_BASENAME=Projet_serre_ilot_3
 PACKAGE_TOP_DIR=Projetserreilot3/
 
 # Functions

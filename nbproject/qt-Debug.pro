@@ -2,15 +2,15 @@
 # Use project properties -> Build -> Qt -> Expert -> Custom Definitions.
 TEMPLATE = app
 DESTDIR = dist/Debug/GNU-Linux
-TARGET = Projet_serre_ilot__3
+TARGET = Projet_serre_ilot_3
 VERSION = 1.0.0
 CONFIG -= debug_and_release app_bundle lib_bundle
 CONFIG += debug 
 PKGCONFIG +=
 QT = core gui widgets
-SOURCES += main.cpp
-HEADERS +=
-FORMS +=
+SOURCES += VueMeteo.cpp.cc VuePrincipale.cpp.cc VueSerre.cpp.cc main.cpp
+HEADERS += VueMeteo.h VuePrincipale.h VueSerre.h
+FORMS += VueMeteo.ui VuePrincipale.ui VueSerre.ui
 RESOURCES +=
 TRANSLATIONS +=
 OBJECTS_DIR = build/Debug/GNU-Linux

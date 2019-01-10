@@ -17,10 +17,10 @@ VueMeteo::VueMeteo() {
     widget.setupUi(this);
 }
 
-VueMeteo::mettreAJour(){
+void VueMeteo::mettreAJour(){
     widget.vitesseVent->setText("350");
     widget.temperature->setText("−273,15");
 }
 
-virtual VueMeteo::~VueMeteo() {
+VueMeteo::~VueMeteo() {
 }

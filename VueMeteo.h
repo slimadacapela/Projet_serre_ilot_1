@@ -21,6 +21,10 @@ class VueMeteo : public QWidget {
 public:
     VueMeteo();
     virtual ~VueMeteo();
+    
+public slots :
+    mettreAJour();
+    
 private:
     Ui::VueMeteo widget;
 };

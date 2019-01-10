@@ -21,6 +21,10 @@ class VueSerre : public QWidget {
 public:
     VueSerre();
     virtual ~VueSerre();
+    
+public slots :
+    void mettreAJour();
+    
 private:
     Ui::VueSerre widget;
 };

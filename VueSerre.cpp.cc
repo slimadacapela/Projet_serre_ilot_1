@@ -17,5 +17,12 @@ VueSerre::VueSerre() {
     widget.setupUi(this);
 }
 
+void VueSerre::mettreAJour(){
+    widget.hygrometrie->setText("1");
+    widget.temperature->setText("−273,15");
+    widget.luminosite->setText("100 000");
+    widget.positionOuvrants->setText("359");
+}
+
 VueSerre::~VueSerre() {
 }

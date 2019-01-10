@@ -35,6 +35,7 @@ public:
     QVBoxLayout *verticalLayout;
     QLineEdit *vitesseVent;
     QLineEdit *temperature;
+    QWidget *widget;
     QVBoxLayout *verticalLayout_3;
     QLabel *vVent_2;
     QLabel *vVent_3;
@@ -43,13 +44,13 @@ public:
     {
         if (VueMeteo->objectName().isEmpty())
             VueMeteo->setObjectName(QStringLiteral("VueMeteo"));
-        VueMeteo->resize(225, 103);
+        VueMeteo->resize(255, 103);
         groupBox = new QGroupBox(VueMeteo);
         groupBox->setObjectName(QStringLiteral("groupBox"));
-        groupBox->setGeometry(QRect(10, 10, 201, 81));
+        groupBox->setGeometry(QRect(10, 10, 231, 81));
         layoutWidget = new QWidget(groupBox);
         layoutWidget->setObjectName(QStringLiteral("layoutWidget"));
-        layoutWidget->setGeometry(QRect(10, 20, 177, 52));
+        layoutWidget->setGeometry(QRect(10, 20, 179, 54));
         horizontalLayout = new QHBoxLayout(layoutWidget);
         horizontalLayout->setObjectName(QStringLiteral("horizontalLayout"));
         horizontalLayout->setContentsMargins(0, 0, 0, 0);
@@ -86,20 +87,21 @@ public:
 
         horizontalLayout->addLayout(verticalLayout);
 
-        verticalLayout_3 = new QVBoxLayout();
+        widget = new QWidget(groupBox);
+        widget->setObjectName(QStringLiteral("widget"));
+        widget->setGeometry(QRect(190, 20, 32, 52));
+        verticalLayout_3 = new QVBoxLayout(widget);
         verticalLayout_3->setObjectName(QStringLiteral("verticalLayout_3"));
-        vVent_2 = new QLabel(layoutWidget);
+        verticalLayout_3->setContentsMargins(0, 0, 0, 0);
+        vVent_2 = new QLabel(widget);
         vVent_2->setObjectName(QStringLiteral("vVent_2"));
 
         verticalLayout_3->addWidget(vVent_2);
 
-        vVent_3 = new QLabel(layoutWidget);
+        vVent_3 = new QLabel(widget);
         vVent_3->setObjectName(QStringLiteral("vVent_3"));
 
         verticalLayout_3->addWidget(vVent_3);
-
-
-        horizontalLayout->addLayout(verticalLayout_3);
 
 
         retranslateUi(VueMeteo);

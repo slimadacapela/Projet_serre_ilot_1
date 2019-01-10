@@ -23,7 +23,7 @@ public:
     virtual ~VueMeteo();
     
 public slots :
-    mettreAJour();
+    void mettreAJour();
     
 private:
     Ui::VueMeteo widget;

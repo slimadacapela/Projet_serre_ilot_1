@@ -15,6 +15,7 @@
 
 VueSerre::VueSerre() {
     widget.setupUi(this);
+    this->mettreAJour();
 }
 
 void VueSerre::mettreAJour(){

@@ -15,6 +15,12 @@
 
 VuePrincipale::VuePrincipale() {
     widget.setupUi(this);
+    serre = new VueSerre();
+    meteo = new VueMeteo();
+    widget.meteo->addWidget(meteo);
+    widget.serre->addWidget(serre);
+    widget.serre->addWidget(serre);
+    widget.serre->addWidget(serre);
 }
 
 VuePrincipale::~VuePrincipale() {

@@ -15,6 +15,7 @@
 
 VueMeteo::VueMeteo() {
     widget.setupUi(this);
+    this->mettreAJour();
 }
 
 void VueMeteo::mettreAJour(){

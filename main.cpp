@@ -13,16 +13,15 @@
 
 #include <QApplication>
 
-#include "VueSerre.h"
+#include "VuePrincipale.h"
 
 int main(int argc, char *argv[]) {
     // initialize resources, if needed
     // Q_INIT_RESOURCE(resfile);
 
     QApplication app(argc, argv);
-    VueSerre *monFormulaire = new VueSerre();
+    VuePrincipale *monFormulaire = new VuePrincipale();
     monFormulaire -> show();
-    monFormulaire -> mettreAJour();
 
     // create and show your widgets here
 

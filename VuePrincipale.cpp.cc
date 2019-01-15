@@ -15,12 +15,18 @@
 
 VuePrincipale::VuePrincipale() {
     widget.setupUi(this);
-    serre = new VueSerre();
     meteo = new VueMeteo();
     widget.meteo->addWidget(meteo);
-    widget.serre->addWidget(serre);
-    widget.serre->addWidget(serre);
-    widget.serre->addWidget(serre);
+    for( int i = 0 ; i < 3 ; i++){
+        serre[i] = new VueSerre();
+        widget.serre->addWidget(serre[i]);
+    }
+    this -> mettreAJour();
+}
+
+void VuePrincipale::mettreAJour(){
+    meteo->mettreAJour();
+    serre[0]->mettreAJour();
 }
 
 VuePrincipale::~VuePrincipale() {

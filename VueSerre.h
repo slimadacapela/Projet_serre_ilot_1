@@ -16,7 +16,7 @@
 
 #include "ui_VueSerre.h"
 
-class VueSerre : public QWidget {
+class VueSerre : public QWidget, Observateur {
     Q_OBJECT
 public:
     VueSerre();

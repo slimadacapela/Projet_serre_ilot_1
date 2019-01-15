@@ -17,17 +17,17 @@
 #include "ui_VuePrincipale.h"
 #include "VueMeteo.h"
 #include "VueSerre.h"
-#include <QGridLayout>
 
 class VuePrincipale : public QWidget {
     Q_OBJECT
 public:
     VuePrincipale();
+    void mettreAJour();
     virtual ~VuePrincipale();
 private:
     Ui::VuePrincipale widget;
     VueMeteo *meteo;
-    VueSerre *serre;
+    VueSerre *serre[3];
 };
 
 #endif /* _VUEPRINCIPALE_H */

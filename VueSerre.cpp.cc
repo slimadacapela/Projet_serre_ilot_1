@@ -18,11 +18,16 @@ VueSerre::VueSerre() {
     this->mettreAJour();
 }
 
+VueSerre::VueSerre(QString * nom, InfosClimat * uneInfoClimat){
+    widget.setupUi(this);
+    this->mettreAJour();
+}
+
 void VueSerre::mettreAJour(){
-    widget.hygrometrie->setText("1");
-    widget.temperature->setText("−273,15");
-    widget.luminosite->setText("100 000");
-    widget.positionOuvrants->setText("359");
+    widget.hygrometrie->setText(QString::number(InfosClimat->getHygroClimat(),10));
+    widget.temperature->setText(QString::number(InfosClimat->getTempClimat(),10));
+    widget.luminosite->setText(QString::number(InfosClimat->getPsOuvrClimat(),10));
+    widget.positionOuvrants->setText(QString::number(InfosClimat->getLumClimat(),10));
 }
 
 VueSerre::~VueSerre() {

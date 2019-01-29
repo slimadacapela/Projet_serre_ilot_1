@@ -34,8 +34,8 @@
                    kind="IMPORTANT_FILES_FOLDER">
       <itemPath>Makefile</itemPath>
     </logicalFolder>
-    <itemPath>ClassesMetier/InfoClimat.cpp</itemPath>
-    <itemPath>ClassesMetier/InfoClimat.h</itemPath>
+    <itemPath>ClassesMetier/InfosClimat.cpp</itemPath>
+    <itemPath>ClassesMetier/InfosClimat.h</itemPath>
     <itemPath>ClassesMetier/Observable.cpp</itemPath>
     <itemPath>ClassesMetier/Observable.h</itemPath>
     <itemPath>ClassesMetier/Observateur.cpp</itemPath>
@@ -54,9 +54,9 @@
       </qt>
       <compileType>
       </compileType>
-      <item path="ClassesMetier/InfoClimat.cpp" ex="false" tool="1" flavor2="0">
+      <item path="ClassesMetier/InfosClimat.cpp" ex="false" tool="1" flavor2="0">
       </item>
-      <item path="ClassesMetier/InfoClimat.h" ex="false" tool="3" flavor2="0">
+      <item path="ClassesMetier/InfosClimat.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="ClassesMetier/Observable.cpp" ex="false" tool="1" flavor2="0">
       </item>
@@ -111,9 +111,9 @@
           <developmentMode>5</developmentMode>
         </asmTool>
       </compileType>
-      <item path="ClassesMetier/InfoClimat.cpp" ex="false" tool="1" flavor2="0">
+      <item path="ClassesMetier/InfosClimat.cpp" ex="false" tool="1" flavor2="0">
       </item>
-      <item path="ClassesMetier/InfoClimat.h" ex="false" tool="3" flavor2="0">
+      <item path="ClassesMetier/InfosClimat.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="ClassesMetier/Observable.cpp" ex="false" tool="1" flavor2="0">
       </item>

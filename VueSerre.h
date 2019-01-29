@@ -15,11 +15,13 @@
 #define _VUESERRE_H
 
 #include "ui_VueSerre.h"
+#include "./ClassesMetier/InfosClimat.h"
 
 class VueSerre : public QWidget, Observateur {
     Q_OBJECT
 public:
     VueSerre();
+    VueSerre(QString * nom, InfosClimat * uneInfoClimat);
     virtual ~VueSerre();
     
 public slots :
@@ -27,6 +29,9 @@ public slots :
     
 private:
     Ui::VueSerre widget;
+    QString * nom;
+    InfosClimat * infosClimat;
 };
+
 
 #endif /* _VUESERRE_H */
